@@ -1,4 +1,4 @@
-﻿define(['squire'], function (Squire) {
+﻿define(['squire', "../js/stub"], function (Squire, stub) {
 
 	describe('hello', function () {
 		var hello;
@@ -6,7 +6,7 @@
 		beforeEach(function (done) {
 			new Squire().mock('foo', {
 				message: "Hello, World!"
-			}).require(['hello'], function (hi) {
+			}).require(['../js/hello'], function (hi) {
 				hello = hi;
 				done();
 			});
@@ -16,19 +16,19 @@
 			expect(hello.message).toBe("Hello, World!");
 		});
 	});
-
+	
 	describe('hello no mock foo', function () {
 		var hello;
 
 		beforeEach(function (done) {
-			require(['hello'], function (hi) {
+			new Squire().mock('foo', stub()).require(['../js/hello'], function (hi) {
 				hello = hi;
 				done();
 			});
 		});
 
 		it('is less than welcoming', function () {
-			expect(hello.message).toBe("Go away, World!");
+			expect(typeof hello.message).toEqual("function");
 		});
 	});
 });
