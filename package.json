@@ -1,0 +1,14 @@
+{
+	"name": "metacircular-evaluator",
+	"version": "0.0.1",
+	"devDependencies": {
+		"jasmine-core": "2.3.2",
+		"squirejs":  "0.2.1"
+	},
+	"dependencies": {
+		"requirejs": "2.1.17",
+		"underscore": "1.8.3",
+		"jquery":  "2.0.3",
+		"knockout":  "3.3.0"
+	}
+}
