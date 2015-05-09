@@ -11,6 +11,7 @@
 			'squire': 'node_modules/squirejs/src/Squire',
 			'knockout': 'node_modules/knockout/build/output/knockout-latest.debug',
 			'jquery': 'node_modules/jquery/dist/jquery',
+			"stub": "js/stub",
 			"foo": "js/foo",
 			"hello": "js/hello"
 		},
