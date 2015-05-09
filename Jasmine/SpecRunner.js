@@ -3,7 +3,7 @@
 
 	// Configure RequireJS to shim Jasmine
 	requirejs.config({
-		baseUrl: "../App",
+		baseUrl: "../js",
 		paths: {
 			'jasmine': '../Jasmine/lib/jasmine/jasmine',
 			'jasmine-html': '../Jasmine/lib/jasmine/jasmine-html',
