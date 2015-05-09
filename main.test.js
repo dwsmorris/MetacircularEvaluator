@@ -11,6 +11,13 @@
 			'squire': 'node_modules/squirejs/src/Squire',
 			'knockout': 'node_modules/knockout/build/output/knockout-latest.debug',
 			'jquery': 'node_modules/jquery/dist/jquery'
+		},	
+		map: {
+			"*": {
+				"stub": "js/stub"/*,
+				"foo": "js/stub",
+				"hello": "js/stub"*/
+			}
 		},
 		shim: {
 			'jasmine': {

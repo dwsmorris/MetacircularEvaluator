@@ -1,4 +1,4 @@
-﻿define(['squire', "../js/stub"], function (Squire, stub) {
+﻿define(['squire', "stub"], function (Squire, stub) {
 
 	describe('hello', function () {
 		var hello;
@@ -21,7 +21,7 @@
 		var hello;
 
 		beforeEach(function (done) {
-			new Squire().mock('foo', stub()).require(['../js/hello'], function (hi) {
+			new Squire().mock('foo', stub).require(['../js/hello'], function (hi) {
 				hello = hi;
 				done();
 			});
