@@ -1,16 +1,12 @@
 ﻿define(['squire'], function (Squire) {
 
-	var injector = new Squire();
-	var builder = injector
-        .mock('foo', {
-        	message: "Hello, World!"
-        });
-
 	describe('hello', function () {
 		var hello;
 
 		beforeEach(function (done) {
-			builder.require(['hello'], function (hi) {
+			new Squire().mock('foo', {
+				message: "Hello, World!"
+			}).require(['hello'], function (hi) {
 				hello = hi;
 				done();
 			});
