@@ -3,17 +3,19 @@
 
 	// Configure RequireJS to shim Jasmine
 	requirejs.config({
-		baseUrl: "../js",
+		baseUrl: "./",
 		paths: {
-			'jasmine': '../Jasmine/lib/jasmine/jasmine',
-			'jasmine-html': '../Jasmine/lib/jasmine/jasmine-html',
-			'boot': '../Jasmine/lib/jasmine/boot', // This is not present in Jasmine 1.3
-			'spec': '../Jasmine/spec',
-			'squire': '../Jasmine/squire',
-			//'knockout': '../Scripts/knockout-2.3.0',
-			//'jquery': '../Scripts/jquery-1.10.2' // This only used in the Jasmine 1.3 case.
-			'knockout': '../Scripts/knockout',
-			'jquery': '../Scripts/jquery' // This only used in the Jasmine 1.3 case.
+			'jasmine': 'Jasmine/lib/jasmine/jasmine',
+			'jasmine-html': 'Jasmine/lib/jasmine/jasmine-html',
+			'boot': 'Jasmine/lib/jasmine/boot', // This is not present in Jasmine 1.3
+			'spec': 'Jasmine/spec',
+			'squire': 'Jasmine/squire',
+			//'knockout': 'Scripts/knockout-2.3.0',
+			//'jquery': 'Scripts/jquery-1.10.2' // This only used in the Jasmine 1.3 case.
+			'knockout': 'Scripts/knockout',
+			'jquery': 'Scripts/jquery', // This only used in the Jasmine 1.3 case.
+			"foo": "js/foo",
+			"hello": "js/hello"
 },
 		shim: {
 			'jasmine': {
@@ -35,7 +37,7 @@
 
 	// Define all of your specs here. These are RequireJS modules.
 	var specs = [
-      'spec/hello-spec'
+      'Jasmine/spec/hello-spec'
 	];
 
 	// Load Jasmine - This will still create all of the normal Jasmine browser globals unless `boot.js` is re-written to use the
