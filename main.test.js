@@ -5,18 +5,15 @@
 	requirejs.config({
 		baseUrl: "./",
 		paths: {
-			'jasmine': 'Jasmine/lib/jasmine/jasmine',
-			'jasmine-html': 'Jasmine/lib/jasmine/jasmine-html',
-			'boot': 'Jasmine/lib/jasmine/boot', // This is not present in Jasmine 1.3
-			'spec': 'Jasmine/spec',
-			'squire': 'Jasmine/squire',
-			//'knockout': 'Scripts/knockout-2.3.0',
-			//'jquery': 'Scripts/jquery-1.10.2' // This only used in the Jasmine 1.3 case.
-			'knockout': 'Scripts/knockout',
-			'jquery': 'Scripts/jquery', // This only used in the Jasmine 1.3 case.
+			'jasmine': 'node_modules/jasmine-core/lib/jasmine-core/jasmine',
+			'jasmine-html': 'node_modules/jasmine-core/lib/jasmine-core/jasmine-html',
+			'boot': 'node_modules/jasmine-core/lib/jasmine-core/boot',
+			'squire': 'node_modules/squirejs/src/Squire',
+			'knockout': 'node_modules/knockout/build/output/knockout-latest.debug',
+			'jquery': 'node_modules/jquery/dist/jquery',
 			"foo": "js/foo",
 			"hello": "js/hello"
-},
+		},
 		shim: {
 			'jasmine': {
 				exports: 'jasmine'
