@@ -41,6 +41,14 @@ define([
         it("returns a stub when an array accessor is called on it", function () {
         	expect(typeof stub()[0]).toEqual("function");
         });
+
+        it("correctly stubs a keyed value passed to it on construction", function () {
+        	var newStub = stub({
+				property: 3
+        	});
+
+        	expect(newStub.property).toBe(23);
+        });
     });
 
 });
