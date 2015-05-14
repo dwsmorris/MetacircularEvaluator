@@ -5,11 +5,11 @@
 	requirejs.config({
 		baseUrl: "./",
 		paths: {
-			'jasmine': 'node_modules/jasmine-core/lib/jasmine-core/jasmine',
-			'jasmine-html': 'node_modules/jasmine-core/lib/jasmine-core/jasmine-html',
-			'boot': 'node_modules/jasmine-core/lib/jasmine-core/boot',
-			'squire': 'node_modules/squirejs/src/Squire'
-		},	
+			"jasmine": "dependencies/jasmine/lib/jasmine-core/jasmine",
+			"jasmine-html": "dependencies/jasmine/lib/jasmine-core/jasmine-html",
+			"boot": "dependencies/jasmine/lib/jasmine-core/boot",
+			"squire": "dependencies/squirejs/src/Squire"
+		},
 		shim: {
 			'jasmine': {
 				exports: 'jasmine'
