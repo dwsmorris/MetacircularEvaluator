@@ -10,13 +10,6 @@
 			'boot': 'node_modules/jasmine-core/lib/jasmine-core/boot',
 			'squire': 'node_modules/squirejs/src/Squire'
 		},	
-		map: {
-			"*": {
-				"stub": "js/stub"/*,
-				"foo": "js/stub",
-				"hello": "js/stub"*/
-			}
-		},
 		shim: {
 			'jasmine': {
 				exports: 'jasmine'
