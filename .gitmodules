@@ -1,0 +1,11 @@
+[submodule "dependencies/squire"]
+	path = dependencies/squire
+	url = https://github.com/dwsmorris/Squire.js
+[submodule "dependencies/jasmine"]
+	path = dependencies/jasmine
+	url = https://github.com/dwsmorris/jasmine
+	branch = 2.3.4
+[submodule "dependencies/requirejs"]
+	path = dependencies/requirejs
+	url = https://github.com/dwsmorris/requirejs
+	branch = 2.1.17
