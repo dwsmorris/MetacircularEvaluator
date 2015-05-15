@@ -21,9 +21,7 @@ define(function () {
 	return function stub(values) {
 		return new Proxy(values ? values : {}, {
 			get: function (target, name) {
-				console.log("target: " + JSON.stringify(target));
-				console.log("name: " + name);
-				return name in target ? target[name] : stub({});
+				return name in target ? target[name] : stub();
 			}
 		});
 	};
